@@ -1,7 +1,10 @@
-# Dependencies
+# Node.js
 node_modules/
 package-lock.json
 yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Python
 __pycache__/
@@ -14,8 +17,6 @@ venv/
 ENV/
 build/
 develop-eggs/
-dist/
-downloads/
 eggs/
 .eggs/
 lib/
@@ -27,53 +28,51 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+dist/
 
-# IDE
+# IDE & Editor
 .vscode/
 .idea/
+.sublime-project
+.sublime-workspace
 *.swp
 *.swo
 *~
-.DS_Store
-*.sublime-project
-*.sublime-workspace
 
-# OS
+# OS Files
 .DS_Store
 Thumbs.db
 desktop.ini
+.directory
 
-# Build outputs
+# Build & Output
 dist/
 build/
 *.o
 *.a
-*.so
 
 # Logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+.log
 
-# Environment variables
+# Environment Variables
 .env
 .env.local
 .env.*.local
+.env.production.local
 
-# Testing
+# Testing & Coverage
 coverage/
 .nyc_output/
 .pytest_cache/
 .coverage
+.coverage.*
+htmlcov/
 
-# Temporary files
+# Temporary Files
 *.tmp
 *.bak
 .temp/
 temp/
-
-# Project specific
-.DS_Store
-node_modules
-dist
+tmp/
+*.swp
